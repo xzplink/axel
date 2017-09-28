@@ -1,0 +1,13 @@
+When updating, change these files (if needed):
+
+- AUTHORS
+- ChangeLog (**)
+- CREDITS
+- configure.ac (VERSION)
+- manpage version and date
+- src/text.c (years in Copyright lines near EOF)
+- test Debian packaging
+
+-> run 'make update-po' in po/ to update the .po files.
+
+(**) $ git shortlog -w80,0 --format='* %s' 2.13.1..v2.14
